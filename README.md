@@ -1,21 +1,16 @@
-# how-to-watch-youtube-tivi-on-laptop
-how to watch youtube tivi on laptop
-
-
-Why watch YouTube TV on a laptop?
-
-The great thing about YouTube TV is that you can connect your phone to it and stream videos through it.
-
-First, you need to fake the user agent of your browser. Open up the dev tools, then go to More Tools > Network Conditions > paste the TV user agent into it:
+To replace a string in MySQL, you can use the REPLACE function. The syntax is as follows:
 
 ```
-Mozilla/5.0(SMART-TV; Linux; Tizen 4.0.0.2) AppleWebkit/605.1.15 (KHTML, like Gecko) SamsungBrowser/9.2 TV Safari/605.1.15
+UPDATE table_name SET column_name = REPLACE(column_name, 'string_to_replace', 'replacement_string');
 ```
-Next, navigate to the link and enjoy:
+In the above query, table_name is the name of the table that you want to update, column_name is the name of the column that you want to replace the string in, string_to_replace is the string that you want to replace, and replacement_string is the string that you want to replace it with.
+
+Here's an example query that replaces all occurrences of the string 'foo' with the string 'bar' in the column my_column of the my_table table:
+
 ```
-https://www.youtube.com/tv#/
+UPDATE my_table SET my_column = REPLACE(my_column, 'foo', 'bar');
 ```
-Tip: To connect with your phone, go to the settings of YouTube TV and select "connect to the same Wi-Fi."
+Note that this query will update all rows in the table that contain the specified string. If you want to update only certain rows, you can add a WHERE clause to the query.
 
 
 
